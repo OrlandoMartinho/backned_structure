@@ -61,6 +61,6 @@ Feel free to contribute with improvements to this project. Suggestions and PRs a
 
 ---
 
-📌 **Author:** _Your Name_  
-📅 **Last updated:** _date_
+📌 **Author:** Orlando Saiombo  
+
 
