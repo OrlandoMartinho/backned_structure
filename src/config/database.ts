@@ -199,7 +199,7 @@ class Database {
       
       // Verifica e cria o banco de dados, se necessário
       await this.createDatabaseIfNotExists();
-      
+      execSync('npx prisma migrate dev --name "init"');
     } catch (error) {
       console.error('Erro ao executar migrações:', error);
       throw error;
