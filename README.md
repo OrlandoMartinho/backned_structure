@@ -1,60 +1,66 @@
 # My Backend Structure
 
-Este é um projeto backend estruturado utilizando **Fastify** e **TypeScript**. A organização das pastas segue boas práticas para facilitar a manutenção e escalabilidade.
+This is a backend project structured using **Fastify** and **TypeScript**. The folder organization follows best practices to facilitate maintenance and scalability.
 
-## 📁 Estrutura de Pastas
+## 📁 Folder Structure
 
 ```
 my_backend_structure/
-│── node_modules/      # Dependências do projeto (gerenciado pelo pnpm)
-│── prisma/            # Configuração do Prisma ORM
-│   ├── migrations/    # Arquivos de migração do banco de dados
-│   ├── schema.prisma  # Definição do esquema do banco de dados
-│── private/           # Arquivos privados (exemplo: chaves de configuração)
-│── src/               # Código-fonte principal
-│   ├── config/        # Configuração da aplicação (banco de dados, variáveis de ambiente, etc.)
-│   ├── controllers/   # Lógica dos controladores (handlers das requisições)
-│   ├── routes/        # Definição das rotas da API
-│   ├── schemas/       # Definição de esquemas e validações
-│   ├── services/      # Regras de negócios e funções reutilizáveis
-│   ├── types/         # Definição de tipos TypeScript
-│   ├── utils/         # Funções utilitárias auxiliares
-│   ├── server.ts      # Arquivo principal do servidor Fastify
-│── .env               # Variáveis de ambiente
-│── .gitignore         # Arquivos ignorados pelo Git
-│── package.json       # Configuração do projeto e dependências
-│── pnpm-lock.yaml     # Versões bloqueadas das dependências
-│── tsconfig.json      # Configuração do TypeScript
+│── node_modules/      # Project dependencies (managed by pnpm)
+│── prisma/            # Prisma ORM configuration
+│   ├── migrations/    # Database migration files
+│   ├── schema.prisma  # Database schema definition
+│── private/           # Private files (e.g., configuration keys)
+│── src/               # Main source code
+│   ├── config/        # Application configuration (database, environment variables, etc.)
+│   ├── controllers/   # Controllers logic (request handlers)
+│   ├── routes/        # API route definitions
+│   ├── schemas/       # Schema definitions and validations
+│   ├── services/      # Business logic and reusable functions
+│   ├── types/         # TypeScript type definitions
+│   ├── utils/         # Utility helper functions
+│   ├── server.ts      # Main Fastify server file
+│── .env               # Environment variables
+│── .gitignore         # Git ignored files
+│── package.json       # Project configuration and dependencies
+│── pnpm-lock.yaml     # Locked dependency versions
+│── tsconfig.json      # TypeScript configuration
 ```
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-- **Fastify** - Framework web rápido e eficiente para Node.js
-- **TypeScript** - Tipagem estática para JavaScript
-- **Prisma** - ORM moderno para gerenciamento do banco de dados
-- **Dotenv** - Gerenciamento de variáveis de ambiente
-- **PNPM** - Gerenciador de pacotes eficiente
+- **Fastify** - A fast and efficient web framework for Node.js
+- **TypeScript** - Static typing for JavaScript
+- **Prisma** - A modern ORM for database management
+- **Dotenv** - Environment variable management
+- **PNPM** - An efficient package manager
+- **Swagger UI** - Interactive API documentation
 
-## 🔧 Como Executar
+## 🔧 How to Run
 
-1. Instale as dependências:
+1. Install dependencies:
    ```sh
    pnpm install
    ```
 
-2. Configure as variáveis de ambiente no arquivo `.env`.
+2. Configure environment variables in the `.env` file.
 
-3. Execute a aplicação:
+3. Run the application:
    ```sh
    pnpm run dev
    ```
 
-## 📌 Contribuições
+4. Access the API documentation via Swagger UI at:
+   ```
+   http://localhost:port/documentation
+   ```
 
-Sinta-se à vontade para contribuir com melhorias para este projeto. Sugestões e PRs são bem-vindos!
+## 📌 Contributions
+
+Feel free to contribute with improvements to this project. Suggestions and PRs are welcome!
 
 ---
 
-📌 **Autor:** Orlando Martinho 
-
+📌 **Author:** _Your Name_  
+📅 **Last updated:** _date_
 
