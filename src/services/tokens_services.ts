@@ -1,7 +1,7 @@
 // src/services/TokenService.ts
 
 import jwt, { JwtPayload } from 'jsonwebtoken';
-import secretKey from '../private/secretKey.json';
+import secretKey from '../../private/secret_keys.json'; // Importa a chave secreta
 import { PrismaClient } from '@prisma/client'; // Importa o PrismaClient
 import { tokenSchema, emailSchema, dateSchema } from '../schemas/tokens_services_schemas'; // Importa os esquemas de validação
 import DateFormatter from '../utils/date_formatter';

@@ -1,16 +1,21 @@
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
 model Users {
-  id_user        String @id @default(uuid())
-  nome      String
-  email     String @unique
-  criadoEm  DateTime @default(now())
+  id_user                 Int      @id @default(autoincrement()) // Corrigido "autoincremnets" para "autoincrement()"
+  name                    String
+  email                   String   @unique
+  password                String
+  access_token            String?  // Token de acesso opcional
+  type                    Int      // Tipo de usuário (ex: admin, user, etc.)
+  gender                  String?  // Gênero opcional
+  license                 String?  // Licença opcional
+  license_expiration_date DateTime? // Data de expiração da licença opcional
+  created_in              DateTime @default(now()) // Corrigido "criated_in" para "created_in"
 }

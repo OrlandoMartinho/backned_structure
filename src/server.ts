@@ -13,7 +13,7 @@ import fastifySwaggerUi from '@fastify/swagger-ui';
 import { routes } from './routes/routes';
 import path from 'path';
 import dotenv from 'dotenv';
-import servidor from '../private/server.json';
+import servidor from '../private/server_config.json';
 import database from './config/database';
 
 dotenv.config();
