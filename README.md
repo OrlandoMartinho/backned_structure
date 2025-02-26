@@ -52,7 +52,7 @@ my_backend_structure/
 
 4. Access the API documentation via Swagger UI at:
    ```
-   http://localhost:port/documentation
+   http://localhost:port/docs
    ```
 
 ## 📌 Contributions
