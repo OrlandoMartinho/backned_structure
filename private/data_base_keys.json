@@ -2,7 +2,7 @@
     "host": "localhost",
     "user": "root",
     "password": "",
-    "database": "plataforma_de_rastreamento" ,
+    "database": "any" ,
     "port":3306,
     "url_mungo":"mongodb://localhost:27017",
     "sql_file":"sqlite"
