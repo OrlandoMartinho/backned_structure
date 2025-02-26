@@ -28,8 +28,8 @@ class EmailService {
       const mailOptions: SendMailOptions = {
         from: credenciais.email,
         to: recipient,
-        subject: "ANAC Exam platform confirmation code",
-        html: `<h1 style="font-weight:normal;">Welcome to our online exam platform. Your confirmation code is <strong>${code}</strong></h1>`,
+        subject: "Jhon Doe confirmation code",
+        html: `<h1 style="font-weight:normal;">Welcome to Jhon Doe platform. Your confirmation code is <strong>${code}</strong></h1>`,
       };
 
       const info = await this.transporter.sendMail(mailOptions);
@@ -52,7 +52,7 @@ class EmailService {
       const mailOptions: SendMailOptions = {
         from: credenciais.email,
         to: recipient,
-        subject: "Answer from ANAC Exam Platform",
+        subject: "Answer from Jhon Doe",
         html: `<p>${content}</p>`,
       };
 
@@ -76,7 +76,7 @@ class EmailService {
       const mailOptions: SendMailOptions = {
         from: credenciais.email,
         to: recipient,
-        subject: "Answer from ANAC Exam Platform",
+        subject: "Jhon Doe",
         html: `<p style="font-family: Arial, sans-serif; font-size: 16px; color: #333; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
                 Esta é a sua nova senha: <strong>${password}</strong>. Tenha cuidado para guardá-la com segurança e, por segurança, apague esta mensagem após visualizá-la.
               </p>
