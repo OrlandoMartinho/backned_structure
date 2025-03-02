@@ -140,7 +140,7 @@ class Database {
     const [databases] = await connection.query(
       `SHOW DATABASES LIKE '${databaseConfig.mysql.database}'`
     );
-
+    // execSync('npx prisma migrate dev --name "init"');
     if (Array.isArray(databases) && databases.length === 0) {
       console.log(`Banco de dados "${databaseConfig.mysql.database}" não existe. Criando...`);
       await connection.query(`CREATE DATABASE ${databaseConfig.mysql.database}`);
@@ -172,7 +172,7 @@ class Database {
       console.log(`Banco de dados "${databaseConfig.postgresql.database}" não existe. Criando...`);
       await client.query(`CREATE DATABASE ${databaseConfig.postgresql.database}`);
       console.log(`Banco de dados "${databaseConfig.postgresql.database}" criado com sucesso.`);
-      execSync('npx prisma migrate dev --name "init"');
+      // execSync('npx prisma migrate dev --name "init"');
     } else {
       console.log(`Banco de dados "${databaseConfig.postgresql.database}" já existe.`);
     }
@@ -186,7 +186,7 @@ class Database {
     try {
       await client.connect();
       console.log('Conectado ao MongoDB');
-      execSync('npx prisma migrate dev --name "init"');
+      // execSync('npx prisma migrate dev --name "init"');
     } catch (error) {
       console.error('Erro ao conectar ao MongoDB:', error);
     } finally {
@@ -199,7 +199,7 @@ class Database {
       
       // Verifica e cria o banco de dados, se necessário
       await this.createDatabaseIfNotExists();
-      execSync('npx prisma migrate dev --name "init"');
+      
     } catch (error) {
       console.error('Erro ao executar migrações:', error);
       throw error;
